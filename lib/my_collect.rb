@@ -1,11 +1,11 @@
 def my_collect(arr) 
-   i = 0
+  count = 0
   result = []
 
-  while i < array.size
-    block_given? # optional
-    result << yield(array[i]) # if block, then yield to block # also need to pass argument(s) to yield, otherwise block is operating on nil
-    i += 1
+  while count < arr.size
+    block_given? 
+    res << yield(arr[count]) 
+    count += 1
   end
 result
 end 
